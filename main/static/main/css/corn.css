@@ -1,0 +1,90 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: aliceblue;
+  color: #333;
+}
+
+
+.navbar {
+  align-items: center;
+  background-color: #2ab499;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links .active {
+  text-decoration: underline;
+}
+
+.hero-section {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 15vh;
+
+}
+.hero-section p{
+  color: #2ab499;
+}
+
+.beans-container {
+  display: grid;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 2rem;
+  padding: 4rem;
+}
+
+.bean-card {
+  flex: 1 1 200px;
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  border-bottom: #2ab499 solid 0.3rem;
+  margin: 1rem;
+}
+
+.bean-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.video-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #eef;
+}
+
+.video-section video {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

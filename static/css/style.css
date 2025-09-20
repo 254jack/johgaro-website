@@ -1,0 +1,419 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  transform: translateY(-60px);
+  width: 30vw;
+  z-index: 900;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  position: fixed;
+  transition: all 1s ease;
+  top: 10vh;
+}
+.logo-scrolled {
+  display: flex;
+  transform: translateY(-900px);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: #14533e;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.info {
+  margin: 0;
+  align-items: center;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1vw;
+  width: 100%;
+  position: fixed;
+  height: fit-content;
+  top: 0;
+  z-index: 70;
+  background-color: aliceblue;
+  overflow:hidden;
+  padding: 0.5rem;
+}
+
+#p1,
+#p2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#p2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.iconlarge {
+  font-size: 1.4vw;
+  color: tomato;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.navbar {
+  padding: 0.75rem 1rem;
+  position: fixed;
+  top: 40px;
+  height: fit-content;
+  width: 100%;
+  background-color: #2ab499;
+  z-index: 80;
+}
+
+.header-section {
+  min-height: 60vh;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.header-section::before {
+  content: "";
+  background-image: url("images/homeship.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.header-background {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.header-carousel {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.carousel-inner {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-caption {
+  top: 60%;
+  transform: translateX(-15%);
+  color: white;
+  position: relative;
+  z-index: 3;
+  padding: 1rem;
+}
+
+.carousel-caption h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  border-radius: 5vh;
+  margin-top: 10px;
+  font-weight: bold;
+  pointer-events: none;
+  user-select: none;
+  z-index: 20;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  border-radius: 50%;
+  z-index: 50;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #36bcce;
+  border-radius: 50%;
+  z-index: 500;
+}
+
+.carousel-indicators [data-bs-target] {
+  z-index: 500;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #2ab499;
+}
+
+header h1 {
+  font-weight: bold;
+  color: rgb(119, 34, 19);
+}
+
+header p {
+  color: white;
+}
+
+/* MAIN SECTION */
+.content-wrapper {
+  padding: 40px 20px 100px;
+}
+.what-we-offer {
+  margin-bottom: 20px;
+  width: 100%;
+  height: fit-content;
+  /* padding: 2rem; */
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.what-we-offer h1,
+h4 {
+  margin-top: 20px;
+}
+
+.what-we-offer div {
+  flex: 1 1 300px;
+  margin: 10px;
+  max-width: 100%;
+  border-bottom: #2ab499 solid 5px;
+  border-radius: 10px;
+  min-width: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* padding: 15px; */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.beans img,
+.peas img,
+.graph img {
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  padding: 0;
+}
+.beans button,
+.peas button,
+.graph button {
+  display: flex;
+  border: none;
+  position: absolute;
+  z-index: 9000;
+  background-color: transparent;
+  color: rgb(97, 48, 15);
+  font-weight: bolder;
+  padding: 15px;
+  margin-bottom: 0;
+  height: 350px;
+  width: 350px;
+  /* margin-left: -50px; */
+  /* transform: translateY(150px); */
+}
+.pvideo {
+  border: none;
+  position: relative;
+  z-index: 9000;
+  background-color: red;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.65);
+  color: green;
+  font-weight: bolder;
+  padding: 15px;
+  height: fit-content;
+  width: 100%;
+  /* margin-left: 150px; */
+  transform: translateY(150px);
+  overflow: hidden;
+}
+
+.beans button:hover {
+  opacity: 0.6;
+}
+
+.py-5 {
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ship-video {
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+  opacity: 0.4;
+}
+
+.news-card {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.news-card h3 a {
+  color: #2b7a78;
+  text-decoration: none;
+}
+
+
+
+
+.footer p {
+  font-size: 1.3vw; /* Adjust the value as needed */
+}
+
+.footer a {
+  font-size: 1.3vw; /* Adjust the value as needed */
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #f1efef;
+  color: black;
+  padding: 20px;
+  margin: 0;
+  bottom: 0;
+}
+
+#footer a {
+  text-decoration: none;
+  color: black;
+  opacity: 60%;
+  width: 100%;
+}
+
+#footer p {
+  opacity: 60%;
+}
+
+#footer button {
+  background-color: #e01e5a;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 1.8vw;
+}
+
+#copyright {
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin: 0;
+  bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+  .info {
+margin: 0;
+  align-items: center;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1vw;
+  width: 100%;
+  position: fixed;
+  height: 5%;
+  display: flex;
+  top: 0;
+  z-index: 700;
+  background-color: aliceblue;
+  }
+
+  #p1, #p2 {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .iconlarge {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .what-we-offer {
+    flex-direction: column;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .what-we-offer div {
+    width: 100%;
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+}
+
+@media (max-width: 300px){
+  /* .info{
+        z-index: 700;
+font-size: 0.5rem;
+padding: 1rem;
+background-color: #14533e;
+margin: 0;
+width: 100%;
+height: fit-content;
+display: flex;
+flex-direction: column;
+  } */
+}
