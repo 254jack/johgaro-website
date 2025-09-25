@@ -1,0 +1,46 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: aliceblue;
+  color: #333;
+}
+
+
+.navbar {
+  align-items: center;
+  background-color: #2ab499;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links .active {
+  text-decoration: underline;
+}
+
+.about_us{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 8vh;
+}
+.about_us img{
+  width: 70%;
+  border-radius: 1rem;
+  margin-top: 10vh;
+}
+
