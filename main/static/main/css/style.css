@@ -383,10 +383,6 @@ textarea {
 }
 
 
-
-
-
-
 /* ----- Keep laptop & desktop as is ----- */
 @media (min-width: 1025px) {
   /* Optional: lock large-screen spacing */
